@@ -1,38 +1,48 @@
 <?xml version="1.0"?>
 <PluginData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="GitHubPlugin">
 
-    <!-- The ID of the plugin, never change this -->
+    <!-- The ID of your plugin -->
     <Id>5EA5AFEC-6B23-44C1-91C4-A5FB5A68090B</Id>
 
     <!-- GitHub repository ID -->
     <RepoId>yellow5111/SE2Online</RepoId>
 
+    <!-- The name of your plugin that will appear in the plugin list -->
     <FriendlyName>Y51 SE2 Online</FriendlyName>
 
+    <!-- The author name that you want to appear in the plugin list -->
     <Author>yellow51</Author>
 
+    <!-- Optional tooltip for the plugin in the plugin list -->
     <Tooltip>Online multiplayer for Space Engineers 2: dedicated servers, hosting and joining over Steam or IP.</Tooltip>
 
-    <Description>
-        Online multiplayer for Space Engineers 2. Host your world, join friends over Steam or a direct IP address, or play on Y51 SE2 Online dedicated servers listed in the in-game server browser.
+    <!-- Optional plugin description. If omitted, this will be the same as the Tooltip. 1000 characters max. -->
+    <Description>Online multiplayer for Space Engineers 2. Host your world, join friends over Steam or a direct IP address, or play on Y51 SE2 Online dedicated servers listed in the in-game server browser.
 
         Includes chat, a players list, admin tools (kick, ban, whitelist, PvP, PCU limit, sun control, safe zones), factions and grid sharing, a respawn menu and name tags. Everyone in a session needs the same plugin version.
 
         Open the Multiplayer screen from the main menu, or with this plugin's config button.
+
+        Website and dedicated server downloads: https://se2-online.yellow51.dev
     </Description>
 
+    <!-- Only source code in the Directory entries listed in SourceDirectories is compiled. Exclude any test projects or similar. -->
     <SourceDirectories>
         <Directory>Y51_SE2Online</Directory>
     </SourceDirectories>
 
-    <!-- Content handed to MpPlugin.LoadAssets (the player name-tag icon). -->
+    <!-- Content handed to the plugin's LoadAssets (the player name-tag icon). -->
     <Asset Name="AssetFolder" Path="Y51_SE2Online/Content" />
 
-    <!-- Empty stand-in that keeps the game's VRage.Library.Generator.dll out of the compile (its ~100 duplicated
-         VRage.Library types make every use ambiguous). Built from Pulsar/GeneratorStub; see Pulsar/README.md. -->
+    <!-- Empty compile-time stand-in for the game's VRage.Library.Generator.dll, which Pulsar otherwise references
+         and whose ~100 duplicated VRage.Library types make the compile fail (CS0433). Built from Pulsar/GeneratorStub;
+         see Pulsar/README.md in the repository. -->
     <Asset Name="GeneratorStub" Path="Pulsar/VRage.Library.Generator.dll" Reference="true" Sha256="379c2109e35d660709feb5f45fec19ba5df36e462f8ade75790ef828fa3b224f" />
 
+    <!-- Optional tag that specifies whether the plugin is hidden. Hidden plugins cannot be selected from the menu and are intended to be used as dependencies. -->
+    <Hidden>false</Hidden>
+
     <!-- The current plugin version's commit hash -->
-    <Commit>TODO Git commit hash</Commit>
+    <Commit>13e053bbf260a57ae9a725b0ee4ff59d3e5c5010</Commit>
 
 </PluginData>
