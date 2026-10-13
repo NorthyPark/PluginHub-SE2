@@ -15,13 +15,13 @@
     </SourceDirectories>
 
     <Asset Name="LinuxDependencies"
-           Url="https://github.com/CometWorks/linux-dependencies/releases/download/v1.0.35/se2-dependencies.tar.gz"
-           Sha256="d0ccf19a558edc124cfb1e8f33a2064dd1f9976c195ee4a24b2095035d993e7d"
+           Url="https://github.com/CometWorks/linux-dependencies/releases/download/v1.0.37/se2-dependencies.tar.gz"
+           Sha256="99bbce34fc75dcbce1c84b37ed68785242c71dfe614f913b7aa67c1d87db7dd6"
            Extract="true"
            Placement="Bin" />
 
     <Asset Name="NativeWrappers"
-           Url="https://github.com/CometWorks/linux-native-wrappers/releases/download/v1.0.55/se2-native-wrappers.tar.gz"
+           Url="https://github.com/CometWorks/linux-native-wrappers/releases/download/v1.0.58/se2-native-wrappers.tar.gz"
            Sha256="4957eb8606603df7f5901becec4122622eef749da0b4dbfbdc4c3cf076dd7813"
            Extract="true"
            Placement="Bin" />
