@@ -15,8 +15,8 @@
     </SourceDirectories>
 
     <Asset Name="LinuxDependencies"
-           Url="https://github.com/CometWorks/linux-dependencies/releases/download/v1.0.40/se2-dependencies.tar.gz"
-           Sha256="5e57546cb1b1532640ce6f27c14ab4b7a79c16f56ca3a2764099e2e2f6edd1d0"
+           Url="https://github.com/CometWorks/linux-dependencies/releases/download/v1.0.42/se2-dependencies.tar.gz"
+           Sha256="c71e5c1af5e65af5072f8c436624ab4b095765e88416eaa1ddfc050fdd04a341"
            Extract="true"
            Placement="Bin" />
 
